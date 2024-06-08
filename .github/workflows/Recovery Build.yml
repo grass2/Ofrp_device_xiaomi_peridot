@@ -17,12 +17,12 @@ on:
         type: choice
         options:
         - 'twrp-12.1'
+        
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
         default: 'https://github.com/grass2/twrp_device_xiaomi_peridot'
-        type: choice
-               
+        
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
