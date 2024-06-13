@@ -24,6 +24,10 @@ TARGET_2ND_CPU_VARIANT := $(TARGET_CPU_VARIANT)
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
+# Resolution
+TARGET_SCREEN_HEIGHT := 2712
+TARGET_SCREEN_WIDTH := 1220
+
 # Bootloader
 PRODUCT_PLATFORM := kalama
 TARGET_BOOTLOADER_BOARD_NAME := peridot
@@ -128,7 +132,7 @@ TWRP_INCLUDE_LOGCAT := true
 # Fastbootd
 TW_INCLUDE_FASTBOOTD := true
 
-# Other TWRP Configurations
+# TWRP Build Flags
 TW_THEME := portrait_hdpi
 TW_FRAMERATE := 60
 RECOVERY_SDCARD_ON_DATA := true
@@ -142,10 +146,15 @@ TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
+TW_DEFAULT_BRIGHTNESS := 400
 TW_MAX_BRIGHTNESS := 2047
 TW_EXTRA_LANGUAGES := true
-TW_DEFAULT_LANGUAGE := zh_CN
-TW_DEFAULT_BRIGHTNESS := 200
+TW_DEFAULT_LANGUAGE := en_US
+TW_STATUS_ICONS_ALIGN := center
+TW_CUSTOM_CPU_POS := "50"
+TW_CUSTOM_CLOCK_POS := "290"
+TW_CUSTOM_CLOCK_POS := "600"
+TW_CUSTOM_BATTERY_POS := "800"
 TW_EXCLUDE_APEX := true
 TW_HAS_EDL_MODE := true
 # Haptic
@@ -158,4 +167,4 @@ TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko fts_touch_spi.ko qti_battery_char
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone35/temp"
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_BACKUP_EXCLUSIONS := /data/fonts
-TW_DEVICE_VERSION := RedmiTurbo3 by Suyuan
+TW_DEVICE_VERSION := R12.1-peridot by Aqua
